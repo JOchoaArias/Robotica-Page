@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Información del Proyecto - Robotica y Programacion para Niños y Adolescentes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header class="parent">
+  <div class="title">
+    <div class="title-col menu-col">
+      <span class="menu-btn" onclick="openMenu()">☰</span>
+      Menu
+      <div id="sideMenu" class="side-menu">
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+        <a href="/PaginaDeRobotica/index.html">Inicio</a>
+      <a href="/PaginaDeRobotica/paginas/InfoProyecto/index.html">Info del proyecto</a>
+      <a href="javascript:void(0)" onclick="irAlInicio()">Noticias y eventos</a>
+      <a href="/PaginaDeRobotica/paginas/formularios/index.html">Formularios y cuestionarios</a>
+      <a href="/PaginaDeRobotica/paginas/equipo/index.html">Equipo</a>
+    </div>
+    </div>
+    <div class="title-col home-col">
+      <div class="title-home">
+        Robótica y Programación para Niños y Adolescentes
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+function openMenu() {
+  document.getElementById("sideMenu").style.width = "250px";
+}
+function closeMenu() {
+  document.getElementById("sideMenu").style.width = "0";
+}
+function irAlInicio() {
+  closeMenu(); // si quieres que cierre el menú lateral
+  window.scrollTo({ top: 0, behavior: 'smooth' }); // sube al inicio suavemente
+}
+
+</script>
+
+</body>
+</html>
